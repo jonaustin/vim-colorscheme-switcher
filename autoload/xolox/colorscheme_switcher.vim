@@ -150,7 +150,6 @@ function! xolox#colorscheme_switcher#switch_to(name) " {{{1
   hi NonText ctermbg=none guibg=none
   hi LineNr ctermbg=none guibg=none
   hi clear CursorLineNr
-
 endfunction
 
 function! xolox#colorscheme_switcher#random_number(limit) " {{{1
