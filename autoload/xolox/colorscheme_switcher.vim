@@ -144,7 +144,13 @@ function! xolox#colorscheme_switcher#switch_to(name) " {{{1
   " https://github.com/xolox/vim-colorscheme-switcher/issues/6
   if !has('gui_running')
     let &syntax = &syntax
-  endif
+  endif 
+  " keep transparent bg
+  hi Normal ctermbg=none guibg=none
+  hi NonText ctermbg=none guibg=none
+  hi LineNr ctermbg=none guibg=none
+  hi clear CursorLineNr
+
 endfunction
 
 function! xolox#colorscheme_switcher#random_number(limit) " {{{1
